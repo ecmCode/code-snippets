@@ -1,3 +1,3 @@
 import { DarkmodeProvider } from "./darkmode";
 
-export { DarkmodeProvider }
+export { DarkmodeProvider };
