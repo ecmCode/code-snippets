@@ -1,0 +1,1 @@
+recommend to use the snippets with tailwind css installed
