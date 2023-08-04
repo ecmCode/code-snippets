@@ -1,4 +1,3 @@
-
 import { ReactNode, useEffect, useState } from "react";
 
 export const DarkmodeProvider = ({ children }: { children: ReactNode }) => {
@@ -23,7 +22,6 @@ export const DarkmodeProvider = ({ children }: { children: ReactNode }) => {
     setLoaded(true);
   }, [darkmode]);
 
-
   useEffect(() => {
     // while on the runtime, listen the prefers-color-scheme media
     // darkmode theme changes as color scheme changes
@@ -40,8 +38,8 @@ export const DarkmodeProvider = ({ children }: { children: ReactNode }) => {
   }, [setDarkmode]);
 
   useEffect(() => {
-    loaded && console.log("Page loaded")
-    loaded && console.log("Darkmode: " + darkmode)
+    loaded && console.log("Page loaded");
+    loaded && console.log("Darkmode: " + darkmode);
   }, [darkmode, loaded]);
 
   return <div className={darkmode ? "dark" : ""}>{loaded && children}</div>;
