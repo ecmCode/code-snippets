@@ -1,3 +1,9 @@
+import { Metadata } from "next/types";
+
+export const metadata : Metadata = {
+  title: "About Me",
+}
+
 export default function Page() {
   return (
     <div>
