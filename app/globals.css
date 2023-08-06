@@ -4,15 +4,16 @@
 
 html,
 body {
-  @apply overflow-x-hidden box-border;
+  @apply overflow-x-hidden box-border min-h-screen;
 }
 
 body {
-  @apply w-screen h-auto flex flex-col justify-start items-center
+  @apply w-screen flex flex-col justify-between items-center
    text-cyan-900 bg-zinc-100;
 }
 
 main {
-  @apply mt-10 w-full min-h-screen prose prose-sm md:prose-base lg:prose-lg xl:prose-xl 
-    prose-headings:text-cyan-950 prose-p:text-zinc-900;
+  @apply px-10 mt-10 w-full flex-1 prose 
+  prose-base lg:prose-lg xl:prose-xl
+  prose-headings:text-cyan-950 prose-p:text-zinc-900;
 }

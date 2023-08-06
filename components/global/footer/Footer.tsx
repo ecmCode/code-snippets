@@ -1,7 +1,10 @@
+import style from "./Footer.module.css"
+
 const Footer = () => {
   return (
-    <footer className="w-full my-4 flex justify-center items-center">
-      <p>Author: @ecmcode, Email: ecmcode.dev@gmail.com</p>
+    <footer className={style.footer}>
+      <p>Author: @ecmcode</p>
+      <p>Email: ecmcode.dev@gmail.com</p>
     </footer>
   );
 };
